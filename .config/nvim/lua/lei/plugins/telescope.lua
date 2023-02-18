@@ -14,6 +14,11 @@ end
 telescope.setup({
   -- configure custom mappings
   defaults = {
+    file_ignore_patterns = {
+      ".git/.*",
+      "node_modules/.*",
+      "dist/.*",
+    },
     mappings = {
       i = {
         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
